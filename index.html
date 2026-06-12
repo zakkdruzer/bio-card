@@ -104,12 +104,26 @@
         border-radius: 1rem;
         background: #1f2937;
         font-size: 0.95rem;
+        transition:
+          transform 0.15s ease,
+          box-shadow 0.15s ease,
+          background 0.15s ease;
+      }
+
+      .link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(15, 23, 42, 0.5);
+        background: #111827;
       }
 
       .link.destacado {
         background: #4f46e5;
         color: #e5e7eb;
         font-weight: 600;
+      }
+
+      .link.destacado:hover {
+        background: #6366f1;
       }
 
       .social {
@@ -127,6 +141,14 @@
         border-radius: 50%;
         background: #dd0c3d;
         font-size: 0.75rem;
+        transition:
+          transform 0.15s ease,
+          background 0.15s ease;
+      }
+
+      .social a:hover {
+        transform: translateY(-1px);
+        background: #111827;
       }
 
       .foot {
@@ -139,18 +161,18 @@
   <body>
     <div class="escenario">
       <main class="card">
-        <div class="avatar">🦊</div>
-        <h1 class="name">Tu Nombre</h1>
-        <p class="bio">Una frase corta que te describa.</p>
+        <div class="avatar">🤖</div>
+        <h1 class="name">José Ignacio Gajardo Soto</h1>
+        <p class="bio">Solo muere quien se niega a aprender</p>
         <section class="stats">
           <div class="stat"><b>1.2k</b><span>Seguidores</span></div>
           <div class="stat"><b>34</b><span>Proyectos</span></div>
           <div class="stat"><b>8.9k</b><span>Likes</span></div>
         </section>
         <nav class="links">
-          <a href="#" class="link destacado">🌟 Mi proyecto estrella</a>
-          <a href="#" class="link">💼 Portafolio</a>
-          <a href="#" class="link">📝 Blog</a>
+          <a href="https://zakkdruzer.github.io/" class="link destacado">🌟 Mi proyecto estrella (Mini-juego)</a>
+          <a href="https://github.com/zakkdruzer" class="link">💼 Mi GitHub</a>
+          <a href="https://www.instagram.com/jose_wajitz/" class="link">📝 Instagram</a>
           <a href="#" class="link">📺 YouTube</a>
         </nav>
         <div class="social">
